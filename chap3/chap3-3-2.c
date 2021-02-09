@@ -8,6 +8,9 @@ int main()
 
     pid = fork();
 
+    if(pid>0)
+        wait(NULL);
+
     printf("Hello, WSL! %d\n",pid);
 
     return 0;
